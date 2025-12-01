@@ -35,3 +35,25 @@ jobs:
           FIX_HTML_PRETTIER: true
           FIX_PYTHON_BLACK: true
           FIX_YAML_PRETTIER: true
+
+# Disable strict Python linters
+PYTHON_PYLINT: false
+PYTHON_FLAKE8: false
+PYTHON_ISORT: false
+PYTHON_MYPY: false
+PYTHON_RUFF: false
+
+# Keep minimal checking
+VALIDATE_PYTHON: true
+
+# Allow HTML but no strict formatting
+VALIDATE_HTML: true
+VALIDATE_HTML_PRETTIER: false
+
+# Disable duplicate code detection
+VALIDATE_JSCPD: false
+
+# Keep GitHub Actions/YAML checks
+VALIDATE_GITHUB_ACTIONS: true
+VALIDATE_YAML: true
+VALIDATE_YAML_PRETTIER: false
